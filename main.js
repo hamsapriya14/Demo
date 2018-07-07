@@ -1,3 +1,4 @@
+
 function getfile(file,callback)
 {
   var xhr=new XMLHttpRequest();
@@ -10,7 +11,8 @@ function getfile(file,callback)
   };
   xhr.send(null);
 }
-getfile("data.json",function(text){
+getfile("data.json",function(text)
+{
   var data = JSON.parse(text);
   console.log(data);
   career(data.career);
@@ -22,18 +24,26 @@ function career(careerInfo){
   var careerHeading=document.createElement("h3");
   child2.appendChild(careerHeading);
   careerHeading.textContent="Carrer Objective";
+
   var careerHr=document.createElement("hr");
   child2.appendChild(careerHr);
+
   var ch=document.createElement("p");
   ch.textContent=careerInfo.info;
   child2.appendChild(ch);
 }
   function education(edu){
-  var eduHeading=document.createElement("h3");
-  eduHeading.textContent="Educational Qualifications";
-  child2.appendChild(eduHeading);
-  var careerHr=document.createElement("hr");
-  child2.appendChild(careerHr);
-  
+    var eduHeading=document.createElement("h3");
+    eduHeading.textContent="Educational Qualifications";
+    child2.appendChild(eduHeading);
+
+      var careerHr=document.createElement("hr");
+      child2.appendChild(careerHr);
+
+      var eduTable=document.createElement("table");
+      eduTable.border="1";
+      var tr1="<tr><td>Degree</td><td><td>Institute</td><td>Data</td></tr>";
+      eduTable.innerHTML=tr1;
+
+      child2.appendChild(eduTable);
   }
-}
