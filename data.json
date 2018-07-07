@@ -24,5 +24,23 @@
     "institute":"Samvida",
     "data":["2013-14","93%"]
   }
+],
+"skills":[
+  {
+    "title":"Languages",
+    "content":["c","python","java","c#","c++","PHP","R"]
+  },
+  {
+  "title": "DataBase",
+  "content":["SQL","MangoDB","Mysql"]
+},
+{
+"title":"WebTechnologies",
+"content":["HTML","CSS","javascript"]
+},
+{
+  "title":"Frameworks",
+  "content":["c","python"]
+}
 ]
 }
