@@ -14,11 +14,26 @@ getfile("data.json",function(text){
   var data = JSON.parse(text);
   console.log(data);
   career(data.career);
-})
-
+  education(data.education);
+}
+)
 var child2=document.querySelector(".childTwo");
 function career(careerInfo){
-var ch=document.createElement("p");
-ch.textContent=careerInfo.info;
-child2.appendChild(ch);
+  var careerHeading=document.createElement("h3");
+  child2.appendChild(careerHeading);
+  careerHeading.textContent="Carrer Objective";
+  var careerHr=document.createElement("hr");
+  child2.appendChild(careerHr);
+  var ch=document.createElement("p");
+  ch.textContent=careerInfo.info;
+  child2.appendChild(ch);
+}
+  function education(edu){
+  var eduHeading=document.createElement("h3");
+  eduHeading.textContent="Educational Qualifications";
+  child2.appendChild(eduHeading);
+  var careerHr=document.createElement("hr");
+  child2.appendChild(careerHr);
+  
+  }
 }
