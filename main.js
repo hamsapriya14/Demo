@@ -42,8 +42,14 @@ function career(careerInfo){
 
       var eduTable=document.createElement("table");
       eduTable.border="1";
-      var tr1="<tr><td>Degree</td><td><td>Institute</td><td>Data</td></tr>";
-      eduTable.innerHTML=tr1;
+      var tr1="<tr><td>Degree</td><td>Institute</td><td>Data</td></tr>";
+      //tr1.style.color="";
+      //eduTable.innerHTML=tr1;
+      var tr2="";
+     for(var i=0;i<edu.length;i++){
+    tr2+="<tr><td>"+edu[i].degree+"</td><td>"+edu[i].institute+"</td><td>"+edu[i].data+"</td></tr>";
+}
+eduTable.innerHTML=tr1+tr2;
 
-      child2.appendChild(eduTable);
+  child2.appendChild(eduTable);
   }
