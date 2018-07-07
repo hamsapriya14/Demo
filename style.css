@@ -2,14 +2,15 @@
   display: flex;
   flex-direction:row;
   justify-content:flex-end;
+  background-color:#F1948A
 }
 .childOne{
   width: 30%;
   padding: 2%;
   border:1px solid #ddd;
-  box-shadow: 3px 3px 3px grey;
+  box-shadow: 3px 3px 3px slateblue;
   border-radius: 20px;
-  background-color: gray;
+  background-color: slateblue;
   margin: 2%;
 }
 .childTwo{
